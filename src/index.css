@@ -1,8 +1,48 @@
-body {
+:root {
+  --wsize: 350px;
+  --size-1: 30px;
+  --border: 2px solid rgba(255, 255, 255, 0.1);
+  --bg-colour: rgba(0, 0, 0, 0.1);
+}
+html {
+  height: fill-available;
+  height: -webkit-fill-available;
+}
+* {
+  box-sizing: border-box;
   font-family: Poppins, sans-serif;
+}
+body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(to bottom right, rgb(202, 207, 216), lightcoral);
+  min-height: 100vh;
+  min-height: fill-available;
+  min-height: -webkit-fill-available;
 }
+h1 {
+  font-size: 2rem;
+}
+input,
+button {
+  width: 100%;
+  border-radius: var(--size-1);
+  padding: 8px 12px;
+  font-size: 1rem;
+  background: none;
+  border: var(--border);
+  /* letter-spacing: 0px; */
+}
+button {
+  cursor: pointer;
+}
+*:focus {
+  outline: var(--border);
+}
+
 input {
-  font-family: Poppins;
+  color: #fff;
+}
+div {
+  margin-block: 20px;
 }
