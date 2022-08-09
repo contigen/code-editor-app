@@ -1,0 +1,12 @@
+.login {
+  --wsize: 350px;
+  width: var(--wsize);
+  min-height: 350px;
+  border: 2px solid;
+}
+.login__form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
