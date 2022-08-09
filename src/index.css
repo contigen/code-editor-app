@@ -1,13 +1,13 @@
 :root {
   --wsize: 350px;
   --size-1: 30px;
-  --border: 2px solid rgba(255, 255, 255, 0.1);
+  --border: 2px solid rgba(255, 255, 255, 0.15);
   --bg-colour: rgba(0, 0, 0, 0.1);
 }
-html {
-  height: fill-available;
-  height: -webkit-fill-available;
+*:focus-visible {
+  outline: var(--border);
 }
+
 * {
   box-sizing: border-box;
   font-family: Poppins, sans-serif;
@@ -15,10 +15,8 @@ html {
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(to bottom right, rgb(202, 207, 216), lightcoral);
+  background: linear-gradient(to bottom right, rgb(202, 216, 215), lightcoral);
   min-height: 100vh;
-  min-height: fill-available;
-  min-height: -webkit-fill-available;
 }
 h1 {
   font-size: 2rem;
@@ -35,13 +33,20 @@ button {
 }
 button {
   cursor: pointer;
+  background-color: var(--bg-colour);
 }
-*:focus {
-  outline: var(--border);
+button:active {
+  color: #333;
 }
-
+label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
 input {
   color: #fff;
+}
+input::placeholder {
+  color: #ddd;
 }
 div {
   margin-block: 20px;
