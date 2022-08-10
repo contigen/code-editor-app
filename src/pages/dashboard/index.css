@@ -1,0 +1,13 @@
+.dashboard {
+  display: flex;
+  justify-content: flex-start;
+  gap: var(--size-1);
+}
+.dashboard__navbar {
+  background-color: #fff;
+  height: 100%;
+}
+input[type="text"] {
+  background: url(../../assets/search.svg) right top no-repeat;
+  background-origin: content-box;
+}
